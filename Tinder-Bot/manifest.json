@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.w3schools.com/cssref/css3_pr_border-radius.php"
+        "https://tinder.com/app/recs"
       ],
       "js": [
         "content.js"
@@ -20,9 +20,10 @@
     }
   ],
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "scripting"
   ],
   "host_permissions": [
-    "*://www.w3schools.com/*"
+    "*://tinder.com/*"
   ]
 }
