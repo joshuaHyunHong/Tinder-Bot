@@ -1,0 +1,28 @@
+{
+  "name": "Tinder Bot AAAAGGGGHHHHH",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.w3schools.com/cssref/css3_pr_border-radius.php"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://www.w3schools.com/*"
+  ]
+}
